@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class Wpng2Page {
+export class ngWPPage {
   navigateTo() {
     return browser.get('/');
   }

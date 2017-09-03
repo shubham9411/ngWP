@@ -1,10 +1,10 @@
-import { Wpng2Page } from './app.po';
+import { ngWPPage } from './app.po';
 
-describe('wpng2 App', () => {
-  let page: Wpng2Page;
+describe('ngWP App', () => {
+  let page: ngWPPage;
 
   beforeEach(() => {
-    page = new Wpng2Page();
+    page = new ngWPPage();
   });
 
   it('should display welcome message', () => {

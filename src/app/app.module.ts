@@ -1,14 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PostListComponent
   ],
   imports: [
-    BrowserModule
+	BrowserModule,
+	AppRoutingModule,
+	HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
