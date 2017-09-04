@@ -1,0 +1,31 @@
+.nav-items {
+	color: red;
+	padding: 1.5em;
+	display: inline;
+	cursor: pointer;
+}
+.nav-items:hover{
+	background: #fff;
+}
+.nav-items:hover a{
+	color: #000;
+}
+.nav{
+	float: right;
+}
+.site-info{
+	padding: 10px;
+	display: inline-block;
+	margin: 0;
+	font-size: 1.7em;
+	color: #000;
+}
+nav{
+	background: #ddd;
+	padding: 0 15px;
+}
+.nav-items a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}

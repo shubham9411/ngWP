@@ -4,21 +4,17 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-import { Post } from './post';
-import { environment } from '../../environments/environment';
+import { SiteInfo } from './site-info';
+import { environment } from '../environments/environment';
 
 @Injectable()
-export class PostsService {
-	private postsUrl = environment.wpApiLink;
-
+export class SiteInfoService {
+	private info = environment.wpBaseLink;
 	constructor(private http: Http) { }
 
-	getPosts(): Observable<Post[]> {
-
+	getInfo(): Observable<SiteInfo> {
 		return this.http
-			.get(this.postsUrl + 'posts')
+			.get(this.info)
 			.map((res: Response) => res.json());
-
 	}
-
 }

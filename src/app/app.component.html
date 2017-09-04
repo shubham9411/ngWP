@@ -1,4 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+	<span><a href="{{siteinfo.url}}"><h1 class="site-info" [innerHTML]="siteinfo.name"></h1></a></span>
+	<ul class="nav">
+		<li class="nav-items"><a href="#">Home</a></li>
+		<li class="nav-items"><a href="#">About</a></li>
+		<li class="nav-items"><a href="#">Kafal</a></li>
+		<li class="nav-items"><a href="#">Contact</a></li>
+	</ul>
+</nav>
 <router-outlet></router-outlet>

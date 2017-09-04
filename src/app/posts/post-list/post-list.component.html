@@ -1,5 +1,5 @@
-<ul>
-  <li *ngFor="let post of posts">
-    {{ post.title.rendered }}
-  </li>
-</ul>
+<div class="container">
+  <a (click)="postSingle(post.slug)" *ngFor="let post of posts">
+    <h1 [innerHTML]="post.title.rendered"></h1>
+  </a>
+</div>

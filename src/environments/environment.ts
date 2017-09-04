@@ -4,5 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  wpBaseLink: '//missionkafal.com/wp-json/',
+  wpApiLink: '//missionkafal.com/wp-json/wp/v2/'
 };
