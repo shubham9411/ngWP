@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  wpBaseLink: '//missionkafal.com/wp-json/',
-  wpApiLink: '//missionkafal.com/wp-json/wp/v2/'
+  wpBaseLink: '//localhost/mr-robot/wp-json/',
+  wpApiLink: '//localhost/mr-robot/wp-json/wp/v2/'
 };
