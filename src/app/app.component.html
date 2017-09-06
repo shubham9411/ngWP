@@ -1,10 +1,10 @@
-<nav>
-	<span><a href="{{siteinfo.url}}"><h1 class="site-info" [innerHTML]="siteinfo.name"></h1></a></span>
-	<ul class="nav">
-		<li class="nav-items"><a href="#">Home</a></li>
-		<li class="nav-items"><a href="#">About</a></li>
-		<li class="nav-items"><a href="#">Kafal</a></li>
-		<li class="nav-items"><a href="#">Contact</a></li>
-	</ul>
-</nav>
+<md-toolbar class="mat-elevation-z4">
+   <span><h1 [innerHTML]="siteinfo.name"></h1></span>
+	<div style="margin-left:auto">
+		<a href="//tictactoe.shubhampandey.in" md-button target="_blank">Tic Tac Toe</a>
+		<a href="#" md-button>About</a>
+		<a href="#" md-button>Kafal</a>
+		<a href="#" md-button>Contact</a>
+	</div>
+</md-toolbar>
 <router-outlet></router-outlet>

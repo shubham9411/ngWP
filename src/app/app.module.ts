@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PostSingleComponent } from './posts/post-single/post-single.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdToolbarModule, MdButtonModule, MdCardModule } from '@angular/material';
 
 
 @NgModule({
@@ -17,7 +19,11 @@ import { PostSingleComponent } from './posts/post-single/post-single.component';
   imports: [
 	BrowserModule,
 	AppRoutingModule,
-	HttpModule
+	HttpModule,
+	BrowserAnimationsModule,
+	MdToolbarModule,
+	MdButtonModule,
+	MdCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
