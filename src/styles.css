@@ -1,18 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-body{
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
 	margin: 0;
 	font-family: 'Lato', 'Times New Roman', serif;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.container{
+
+.container {
 	padding: 0 10%;
+}
+
+a {
+	cursor: pointer;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.posts-card {
+	margin: 1em 0;
 }

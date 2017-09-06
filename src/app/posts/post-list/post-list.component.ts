@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 	selector: 'app-post-list',
 	templateUrl: './post-list.component.html',
 	styleUrls: ['./post-list.component.css'],
-	providers: [PostsService]
+	providers: [ PostsService ]
 })
 export class PostListComponent implements OnInit {
 	posts: Post[];
@@ -27,5 +27,9 @@ export class PostListComponent implements OnInit {
 
 	postSingle(slug) {
 		this.router.navigate([slug]);
+	}
+
+	noFeaturedImage(): void {
+		console.warn('No featured Image :(')
 	}
 }

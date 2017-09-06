@@ -16,15 +16,15 @@ export class PostsService {
 	getPosts(): Observable<Post[]> {
 
 		return this.http
-			.get(this.postsUrl + 'posts')
+			.get(this.postsUrl + 'posts?_embed=true')
 			.map((res: Response) => res.json());
 
 	}
 
 	getSinglePost(slug: string): Observable<Post> {
 		return this.http
-				.get(this.postsUrl + `posts?slug=${slug}`)
-				.map((res: Response) => res.json());
+			.get(this.postsUrl + `posts?slug=${slug}`)
+			.map((res: Response) => res.json());
 	}
 
 }

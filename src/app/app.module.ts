@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PostSingleComponent } from './posts/post-single/post-single.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdToolbarModule, MdButtonModule, MdCardModule } from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { MdToolbarModule, MdButtonModule, MdCardModule } from '@angular/material
 	BrowserAnimationsModule,
 	MdToolbarModule,
 	MdButtonModule,
-	MdCardModule
+	MdCardModule,
+	FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

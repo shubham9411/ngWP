@@ -1,5 +1,16 @@
 <div class="container">
-  <a (click)="postSingle(post.slug)" *ngFor="let post of posts">
-    <h1 [innerHTML]="post.title.rendered"></h1>
-  </a>
+	<a (click)="postSingle(post.slug)" *ngFor="let post of posts">
+		<md-card class="posts-card">
+			<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutAlign.xs="start">
+				<div fxFlex="33.33%" fxFlex.xs="100%" class="post-image">
+					<img [src]="post._embedded['wp:featuredmedia'] != null ? post._embedded['wp:featuredmedia'][0].media_details.sizes.medium_large.source_url : 'assets/placeholder.png' "
+					    (error)="noFeaturedImage()" class="img-responsive" />
+				</div>
+				<div fxFlex="66.66%" fxFlex.xs="100%">
+					<h1 [innerHTML]="post.title.rendered"></h1>
+					<span [innerHTML]="post.excerpt.rendered"></span>
+				</div>
+			</div>
+		</md-card>
+	</a>
 </div>

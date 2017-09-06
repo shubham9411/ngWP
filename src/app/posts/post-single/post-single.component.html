@@ -1,4 +1,4 @@
 <div class="container">
-	<h1 [innerHTML]="post.title.rendered"></h1>
-	<div [innerHTML]="post.content.rendered"></div>
+	 <h1 [innerHTML]="post.title != undefined ? post.title.rendered : ''"></h1>
+	 <div [innerHTML]="post.content != undefined ? post.content.rendered : ''"></div>
 </div>

@@ -12,14 +12,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class PostSingleComponent implements OnInit {
 
-	post: Post = {
-		title: {
-			rendered: '',
-		},
-		content: {
-			rendered: ''
-		}
-	};
+	post: Post = new Post();
 	constructor(private postsService: PostsService, private route: ActivatedRoute ) { }
 
 	ngOnInit() {
